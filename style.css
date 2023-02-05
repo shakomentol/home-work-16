@@ -16,3 +16,26 @@
     color: white;
     border: none;
 }
+.wrapper {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.time-container {
+    width: 200px;
+    height: 100px;
+}
+.text-container {
+    width: 200px;
+    height: 100px;
+}
+.button-item {
+    background-color: yellow;
+    width: 100px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 8px;
+    color: violet;
+    border-radius: 5px;
+}

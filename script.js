@@ -2,9 +2,12 @@
 const button = document.querySelector(".button-icon");
 button.addEventListener("click",() => {
     button.remove();
-    // const src = document.getElementById("body");
-    // src.appendChild(img);
 })
+const newBackgroundColor = document.querySelector(".button-icon");
+function changeBgColor() {
+    newBackgroundColor.style.backgroundColor = "blue";
+}
+newBackgroundColor.addEventListener("mouseover", changeBgColor);
 // 2.
 const img = document.createElement("img");
 img.setAttribute("src", "https://media.tenor.com/LRTkUYkU1kkAAAAC/ok-okay.gif");
@@ -18,3 +21,8 @@ src.appendChild(img);
 const productData = [{product_id: 1, amount: 200}, { product_id: 2, amount: 300 }, { product_id:3, amount: 500 }]
 const sum = (productData) => productData + productData;
 console.log(productData);
+// 5 
+document.getElementById("button").addEventListener("click", myFunction);
+function myFunction() {
+    document.getElementById("button").innerHTML = "KOBE BRYANT FOREVER";
+  }
